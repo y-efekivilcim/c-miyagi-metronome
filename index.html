@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Miyagi Metronome</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,600;1,400&family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <canvas id="canvas"></canvas>
+
+    <div id="ui">
+        <div class="controls-container">
+            <div id="instruction" class="instruction">Strike the space</div>
+            <div id="notification" class="notification">Limit Reached. 100 Marks.</div>
+            
+            <div class="bpm-display">
+                <span id="bpm-number" class="bpm-number">60</span>
+                <span class="bpm-label">BPM</span>
+            </div>
+            <input type="range" id="bpm-slider" min="24" max="240" value="60" aria-label="Tempo">
+            
+            <button id="reset-btn" class="btn-reset">Reset</button>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
